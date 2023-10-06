@@ -1,0 +1,45 @@
+ /**
+ * CS210 Project 1 class PolynomialApp
+ * 
+ * @author Owen Durkin
+ * @version July 1, 2023
+ * 
+ */
+
+import java.util.LinkedList;
+
+public class Polynomial {
+  int cf;
+  
+  public static void Polynomial(String[] args){
+    LinkedList<Integer> cf = new LinkedList<> ();
+  }
+  
+//  public PolynomialAdd(){
+//    Polynomial p = new Polynomial(1, -2, 2); // representing 2*x^2 - 2*x^1 + 1*x^0
+//  }
+//  
+//  public PolynomialSub(){
+//    
+//  }
+//  
+//  public PolynomialMultiply(){
+//    
+//  }
+//  
+//  public PolynomialDivide(){
+//    
+//  }
+//  
+//  public PolynomialEval(){
+//    
+//  }
+//  
+//  public PolynomialDerivative(){
+//    
+//  } 
+//  
+//  public PolynomialRoot(){
+//    
+//  }
+}

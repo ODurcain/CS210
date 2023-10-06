@@ -1,0 +1,5 @@
+For the bad1 it output that there was a mismatch of open/close delimiters. For bad2 it showed that the initial delimiter was never closed. For the good test case it showed there were no errors.
+
+Yes! my program did exactly as expected.
+
+One thing that happened is the comparison for checking the mismatch was done, but I placed it after the else if statement that defines c2 rather than inside of it, so this ended up making the program never properly catch the mismatch. Once I figured that out everything worked as expected.

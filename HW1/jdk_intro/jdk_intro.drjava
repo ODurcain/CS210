@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20190813-220051">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file name="Eye.java" package="" timestamp="01-Jun-2023 19:06:33">
+        <select from="0" to="0"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="EyeballPanel.java" package="" timestamp="01-Jun-2023 19:06:33">
+        <select from="0" to="0"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

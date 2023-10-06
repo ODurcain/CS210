@@ -1,0 +1,18 @@
+Preliminary Questions
+
+1. 791833cf6
+2. I am using VScode, PuTTy, and FileZilla
+3. FileZilla allows me to upload all of my files directly. It replaces manually using SCP commands.
+4. I had an issue with the Xauthority file on my linux account that didn't allow me to upload anything unless I deleted it. Everything surrounding this class so far has went smoothly and 	all programs work. 
+5. The Java Compiler and the Java Virtual Machine.
+6. The compiler produces a byte code representation, or a .class file. It may also produce an error that does not produce a .class file. The virtual machine executes the .class files.
+7. Files ending with .java are considered source files. Files ending with .class are executable files. The files are created in different ways. Source files are the initial code written by 	the user. Class files are compiled and then executed based on the source file(s).
+8. Dr Java is an IDE that allows you to edit, build, and run java based files. 
+9. Dr Java is a GUI. AS put on the website it is a programming environment specifically designed for beginners.
+
+Ending Questions
+
+1. The eyeballs spread out randomly across the window.
+2. EyeballPanel.java is the file and the title is on line 81.
+3. For "This(20, 32)", the 20 is correlated to the number of eyes in the panel and the 32 is correlated to the size of the eyeball. If you set 20 to an outrageous number like 10k, or 15k 	it maxes out on the number of eyeballs, but still leaves empty spaces in the window. If you set the 32 to a number like 3000, then the eyeball is too big to be displayed on screen 	and the panel is blank.
+4. Source code files are EyeballPanel.java and Eye.java. The byte code files are EyeballPanel.class, EyeballPanel$1.class, EyeballPanel$2.class, and Eye.class. The other file is 	jdk_intro.drjava which is essentially showing the files that are contained within the project and when they were accessed. As well as version inform

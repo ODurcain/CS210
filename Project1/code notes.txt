@@ -1,0 +1,116 @@
+    //private  int cf;
+//  private LinkedList<PolynomialApp> CoefList;  
+    /* a constructor that makes an empty polynomial (equal to 0) */
+//  public Polynomial()
+//  {
+//    CoefList = new LinkedList<PolynomialApp>();
+//  }
+//  public Polynomial(int[] data) {
+//    CoefList = new LinkedList<PolynomialApp>();
+//    for (int i = 0; i < data.length - 1; i+=2) {
+//      PolynomialApp cf2 = new PolynomialApp();
+//      CoefList.addLast(cf2);
+//    }
+//  }
+//  
+//  public Polynomial(int... cf){
+//    LinkedList<Integer> cf = new LinkedList<> ();
+//  }
+    
+//  public Polynomial plus(Polynomial that){
+//    Polynomial p = new Polynomial(1, -2, 2); // representing 2*x^2 - 2*x^1 + 1*x^0
+//    for (int i = 0; i <= this.cf.size(); i++) p.cf[i] += this.cf[i];
+//    for (int i = 0; i <= that.cf.size(); i++) p.cf[i] += that.cf[i];
+//    return p;
+//  }
+//  
+//  public PolynomialSub(){
+//    
+//  }
+//  
+//  public PolynomialMultiply(){
+//    
+//  }
+//  
+//  public PolynomialDivide(){
+//    
+//  }
+//  
+//  public PolynomialEval(){
+//    
+//  }
+//  
+//  public PolynomialDerivative(){
+//    
+//  } 
+//  
+//  public PolynomialRoot(){
+//    
+//  }
+
+
+
+
+
+
+
+import java.util.*;
+
+public class Polynomial implements Comparable<polynomial> {
+  
+  private List<Integer> coefficients;
+  
+  public Polynomial(int... coefficients) {
+    this.coefficients = new ArrayList<>();
+    for (int coefficient : coefficients) {
+      this.coefficients.add(coefficient);
+    }
+    // remove high order zero coefficients
+    int i = this.coefficients.size() - 1;
+    while (i >= 0 && this.coefficients.get(i) == 0) {
+      this.coefficients.remove(i);
+      i--;
+    }
+    
+//    @Override
+//    public String toString() {
+//      
+//    }
+//    
+//    @Override
+//    public int compareTo(Polynomial that) {
+//    }
+//    
+//    @Override
+//    public boolean equals(Object obj) {
+//      // Implementation goes here
+//      // You should return true or false based on the comparison of this and that polynomial
+//    }
+    
+    public Polynomial Plus(Polynomial that) {
+      Polynomial poly = new Polynomial();
+      for (int j = 0; j <= this.i; j++) poly.coefficients[i] += this.coefficients[i];
+      for (int j = 0; j <= that.i; j++) poly.coefficients[i] += that.coefficients[i];
+      return poly;
+      // Implementation goes here
+      // You should return a new Polynomial which is the sum of this and that polynomial
+    }
+//    
+//    public Polynomial minus(Polynomial that) {
+//      // Implementation goes here
+//      // You should return a new Polynomial which is the difference of this and that polynomial
+//    }
+//    
+//    public Polynomial multiply(Polynomial that) {
+//      // Implementation goes here
+//      // You should return a new Polynomial which is the product of this and that polynomial
+//    }
+//    
+//    public Polynomial[] divide(Polynomial divisor) {
+//      // Implementation goes here
+//      // You should return a new Polynomial array with quotient and remainder of this divided by divisor polynomial 
+//    }
+//    
+    
+  }
+}

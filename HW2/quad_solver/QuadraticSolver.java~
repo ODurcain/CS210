@@ -1,0 +1,76 @@
+/*
+ * @(#)Solver.java 1.0
+ *
+ *
+ * Quadratic equation solver class
+ * Bob Wilson
+ * 12/29/2015
+ *
+ */
+
+public class QuadraticSolver 
+{ 
+  private int a, b, c;            // coefficients of quadratic equation
+  
+  public QuadraticSolver(int a, int b, int c)
+  {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+  }
+
+  public String getEquation()
+  {
+
+    return ("Solving: " + a + "x\u00b2 " + ( (b >= 0) ? "+ " : "") +
+            b + "x " + ( (c >= 0) ? "+ " : "") + c + " = 0");
+  }
+
+  public String getSolution() 
+  {
+    String result = null; //initializes the string
+    //String result; I learned I need to use stringbuffer to allow for a mutable string
+    double r1, r2; //initialize the roots
+    double det = b * b - 4 * a * c; // initialize the discriminant
+    double q=Math.sqrt(Math.abs(det)); //this is solely used for complex numbers
+    
+    if (det > 0){
+    
+      r1 = (-b + Math.sqrt(det))/2 * a;
+      r2 = (-b - Math.sqrt(det))/2 * a;
+      result = String.format("The roots of the equation are real and different. \nRoot 1 is %.16f\nRoot 2 is %.16f", r1, r2); //output of roots if det>0
+      
+    }
+    
+    else if (det == 0){
+      if(a==0){
+        
+      }
+      double root = -b/(2.0*a);
+      result = String.format("The roots of the equation are real and equal. \nThe only root is %.16f", root);  
+      //result = System.out.println(-(double)b/(2*a));
+    }
+    else if (det < 0){
+      
+      double real = -b/(2.0*a); // this is the real part of the number.
+      double imag = q/(2.0*a);
+      result = String.format("The roots of the equation are complex and different. \nRoot 1 is %.16f + i %.16f\nRoot 2 is %.16f - i %.16f", real, imag, real, imag);
+    }
+   
+    //this nested if loop is for the cases of variable a & b being equal to 0, and variable c being 0, or not 0
+    if(a==0){
+      if (b==0){
+        if (c==0){
+          result = String.format("Any value for x is a solution");
+        }
+        else{
+          result = String.format("No value for x is a solution");
+        }
+      }
+    }
+    return result;
+  }  
+}
+
+    
+  

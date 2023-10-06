@@ -1,0 +1,14 @@
+Owen Durkin
+CS 210
+Project 1
+07/02/23
+
+1. These names are easily identifiable for their purpose in the code. They also look visually appealing when looking at the class IE:   `public Polynomial plus(Polynomial that)` It gives the appearance of Polynomial + that Polynomial. 
+
+2. Through the implements Comparable and override of the compareTo I was allowed to pass a array of custom objects like the polynomial objects to the Arrays.sort method.
+
+3. I did not, but I feel like it would have been especially helpful for going through the division method. As well as there being a problem with the root function when comparing the absolute value of x to the tolerance; there needed to be a less then or equal to, not just a less than sign. Using breakpoints would have assisted in me finding that.
+
+4. Seeing how the tests were going to be ran definitely helped in understanding the logic that went into the unit tests. Definitely have the concern of hardcoding when you can see what the output is supposed to be.
+
+5. javadoc webpages have been extremely helpful in understanding the language as a whole and the more I look at these webpages and develop my own I see how they are structured and navigate them more efficiently. I used them mainly to understand the logic for implementation of the constructor. 

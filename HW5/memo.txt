@@ -1,0 +1,3 @@
+The thought process was to set up an array and then have it perform modulus actions to enqueue and dequeue as necessary. This was the first thing I thought of after viewing the QueueTest file. I hadn't really thought of any other way to approach this problem.
+
+I encountered a problem where I didn't reognize the need the alter the first() method, so for the testWrapAround and testDequeuingNoWrap method it was always failing. Simply returning the queue[first] solved this problem.

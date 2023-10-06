@@ -1,0 +1,59 @@
+import junit.framework.TestCase;
+
+public class TestSolver extends TestCase {
+  private QuadraticSolver cut;
+  
+  public TestSolver()
+  {
+// nothing needed here
+  }
+  
+  public void test2RealRoots()
+  {
+    cut = new QuadraticSolver(1, 0, -3);
+    
+    assertEquals("Solving: 1x\u00b2 + 0x -3 = 0", cut.getEquation());
+    assertEquals("", cut.getSolution());
+    System.out.println(cut);
+  }
+  
+  public void test2ImaginaryRoots()
+  {
+    cut = new QuadraticSolver(1, 1, 1);
+    assertEquals("Solving: 1x\u00b2 + 0x -3 = 0", cut.getEquation());
+    assertEquals("", cut.getSolution());
+    System.out.println(cut);
+  }
+  
+  public void testOnly1Root()
+  {
+    cut = new QuadraticSolver(1, 2, 1);
+    assertEquals("Solving: 1x\u00b2 + 0x -3 = 0", cut.getEquation());
+    assertEquals("", cut.getSolution());
+    System.out.println(cut);
+  }
+  
+  public void testLinear()
+  {
+    cut = new QuadraticSolver(0, 2, 4);
+    assertEquals("Solving: 1x\u00b2 + 0x -3 = 0", cut.getEquation());
+    assertEquals("", cut.getSolution());
+    System.out.println(cut);
+  }
+  
+  public void testNoSolution()
+  {
+    cut = new QuadraticSolver(0, 0, 6);
+    assertEquals("Solving: 1x\u00b2 + 0x -3 = 0", cut.getEquation());
+    assertEquals("", cut.getSolution());
+    System.out.println(cut);
+  }
+  
+  public void testAnySoution()
+  {
+    cut = new QuadraticSolver(0, 0, 0);
+    assertEquals("Solving: 1x\u00b2 + 0x -3 = 0", cut.getEquation());
+    assertEquals("", cut.getSolution());
+    System.out.println(cut);
+  }
+}

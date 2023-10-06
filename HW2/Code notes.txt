@@ -1,0 +1,54 @@
+```public String getSolution() {
+    double discriminant = b * b - 4.0 * a * c;
+    double root1, root2;
+    String result;
+
+    // Case when a is zero
+    if (a == 0) {
+      // Sub-case when both a and b are zero
+      if (b == 0) {
+        // Sub-sub-case when a, b, and c are all zero
+        if (c == 0) {
+          result = "Any value for x is a solution";
+        } else { // c is not zero
+          result = "No value for x is a solution";
+        }
+      } else { // b is not zero
+        root1 = -c / (double) b;
+        result = String.format("The only root is %.1f", root1);
+      }
+    } else { // a is not zero
+      if (discriminant > 0) {
+        root1 = (-b + Math.sqrt(discriminant)) / (2.0 * a);
+        root2 = (-b - Math.sqrt(discriminant)) / (2.0 * a);
+        result = String.format("Root 1 is %.16f\nRoot 2 is %.16f", root1, root2);
+      } else if (discriminant == 0) {
+        root1 = -b / (2.0 * a);
+        result = String.format("The only root is %.1f", root1);
+      } else { // discriminant is less than zero
+        double realPart = -b / (2.0 * a);
+        double imaginaryPart = Math.sqrt(-discriminant) / (2.0 * a);
+        result = String.format("Root 1 is %.1f + i * %.16f\nRoot 2 is %.1f - i * %.16f",
+            realPart, imaginaryPart, realPart, imaginaryPart);
+      }
+    }
+
+    return result;
+  }```
+
+      //result = String.format("real=%.16f", real);
+      //System.out.println("The roots of the equation are complex and different. \n");  
+      //result = System.out.println(-(double)b/(2+a)+"+i"+det+"/n"+-(double)b/(2+a)+"-i"+det);
+      //result = String.format(r+"+i"+q/(2*a)+ "/n" +r+"-i"+q/(2*a));
+      //r1 = (-b + Math.sqrt(det))/2 * a;
+      //r2 = (-b - Math.sqrt(det))/2 * a;
+
+  /*  else if (a == 0 && b == 0 && c != 0){
+      result = String.format("No value for x is a solution");
+    }
+    
+    else if (a == 0 && b == 0 && c == 0){
+      result = String.format("Any value for x is a solution");
+    }
+*/
+// Write your code to build the correct return String here
